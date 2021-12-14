@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body 
+{
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/back.jpg");
+    background-size: auto;
+}
+
+.corp
+{
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%,25%) scale(1.5,1.5);
+    position: absolute;
+    max-width: 750px;
+    min-height: 66.6vh;
+    min-width: 0vw;
+    height: auto !important;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+.titre
+{
+    font-family: 'Trirong', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.En-tête
+{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.col-small {width: 21%;}
+.col-medium {width: 33.33%;}
+.col-half {width: 50%;}
+.col-big {width: 66.66%;}
+.col-biger {width: 75%;}
+.col-full {width: 100%;}
+
+[class*="col-"] 
+    {
+        float: left;
+        padding: 15px;
+        margin: auto;
+    }
+
+@media only screen and (max-width: 1000px) 
+{
+    [class*="col-"] 
+    {
+        width: 96%;
+    }
+}
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .milieu{
+    display: block;
+    margin: auto;
+  }
+
+  .box_ui:hover {
+    background-color: #070057;
+}
+
+.box_ui{
+    border-radius: 10px;
+    padding: 8px;
+    margin: 2%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    font-size: 12px;
+    text-align: center;
+    user-select: none;
+    text-decoration: none;
+    background-color: #060329;
+    color: white;
+    display: block;
+}
+
+.avecImage img {
+    display: none;
+}
+
+.avecImage:hover img {
+    position: relative;
+    display: block;
+    max-height: 50vh;
+    float: right;
+    margin-top: -25vh;
+}
+
+.set_symbol {
+    padding: 5px;
+    margin-bottom: -13px;
+}
+
+.sous_menu {
+    display: none; 
+}
+
+.box_ui:hover>.sous_menu {
+    display: block;
+    position: fixed;
+    margin: 0px;
+    margin-left: -7px;
+    margin-top: 7px;
+    transform: scale(0.9,0.9);
+}
+
+.audio_wrap {
+    transform: scale(0.8,0.8);
+}
